@@ -1,0 +1,9 @@
+08/10
+
+- Cadastro dos lugares
+- Mapa com os "pins" dos lugares
+- Visualização da aba de blog
+- Barra de pesquisa
+- Fixados ser um carrousel de eventos com inscrição
+- Herança universal dos styles
+- 
