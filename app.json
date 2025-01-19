@@ -25,6 +25,7 @@
       "bundleIdentifier": "zettabyte.sarcfitapp"
     },
     "android": {
+      "packageName": "sarc.com.br",
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyAtTROoLo2JzDlCTcVIHCfTNbVCtSb_dAM"
@@ -39,13 +40,12 @@
         "android.permission.ACCESS_FINE_LOCATION",
         "android.permission.INTERNET",
         "android.permission.ACCESS_NETWORK_STATE"
-      ],
-      "package": "zettabyte.sarcfitapp"
+      ]
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/logo-2.jpg"
     },
     "plugins": [
       "expo-router",
