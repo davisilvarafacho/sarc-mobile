@@ -40,7 +40,19 @@
         "android.permission.ACCESS_FINE_LOCATION",
         "android.permission.INTERNET",
         "android.permission.ACCESS_NETWORK_STATE"
-      ]
+      ],
+      "development": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "production": {
+        "buildType": "aab",
+        "gradleCommand": ":app:assembleRelease"
+      }
+      // "buildProperties": {
+      //   "compileSdkVersion": 35,
+      //   "targetSdkVersion": 35
+      // }
     },
     "web": {
       "bundler": "metro",
@@ -65,14 +77,33 @@
             "./assets/fonts/iBrand.otf",
             "./assets/fonts/LeagueSpartan.ttf",
             "./assets/fonts/Lexend.ttf",
-            "./assets/fonts/Oblong.ttf",
+            "./assets/fonts/Oblong.otf",
             "./assets/fonts/SpaceMono.ttf",
             "./assets/fonts/Ubuntu.ttf",
             "./assets/fonts/Alliance.otf"
           ]
         }
       ],
-      "expo-build-properties"
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35
+          }
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0",
+            "kotlinVersion": "1.7.10"
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
